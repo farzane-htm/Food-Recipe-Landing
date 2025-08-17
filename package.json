@@ -1,0 +1,16 @@
+{
+  "name": "food-recipe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w sass/style.scss styles.css"
+  },
+  "keywords": [],
+  "author": "Farzane Hatami",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "sass": "^1.90.0",
+    "bootstrap-icons": "^1.13.1"
+  }
+}
