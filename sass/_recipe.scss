@@ -1,0 +1,59 @@
+.recipe-container {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+  place-items: center;
+}
+
+.recipe {
+  background-color: $text-light;
+  @include flex-center(column, flex-center, flex-center);
+  color: $text-dark;
+  @include border-radius($radius);
+  box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1),
+    -5px -5px 10px rgba(34, 34, 34, 0.5);
+  cursor: pointer;
+  max-width: 350px;
+  @include transition(transform);
+
+  img {
+    height: 300px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-block: 5px;
+  }
+  p {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin: 5px 0;
+  }
+  span {
+    font-weight: 600;
+  }
+
+  button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 18px auto;
+    border: none;
+    cursor: pointer;
+    background-color: $primary;
+    color: $text-light;
+    @include border-radius(5px);
+    @include transition(background-color, 0.2s);
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}

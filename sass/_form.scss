@@ -1,0 +1,25 @@
+form {
+  input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    @include border-radius(4px);
+  }
+
+  button[type="submit"] {
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    @include border-radius(4px);
+    background-color: $primary;
+    color: $text-light;
+    cursor: pointer;
+    @include transition(background-color, 0.2s);
+
+    &:hover {
+      background-color: $primary-hover;
+    }
+  }
+}
